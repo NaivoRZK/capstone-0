@@ -1,14 +1,15 @@
 import './App.css';
+import logo from "./Logo.svg"
 
  export default function Footer() {
   return (
     <>
      <footer>
-     <article>
-     <img src='logo.png' alt='logo de Litle Lemon'/>
-    </article>
+     <div>
+     <img src={logo} alt='logo de Litle Lemon'/>
+    </div>
     
-    <article>
+    <div>
     <h2>Doormat Navigation </h2>
      <ul>
      <li>       <a href='/Home'> Home </a> </li>
@@ -21,10 +22,10 @@ import './App.css';
      
  
      
-    </article>
+    </div>
 
      
-    <article>
+    <div>
     <h2>Contact </h2>
     <ul>
      <li>       <a href='/Adress'> Adress  </a> </li>
@@ -34,10 +35,10 @@ import './App.css';
      </ul>
    
      
-    </article>
+    </div>
 
      
-    <article>
+    <div>
     <h2>Social Media Links </h2>
     <ul>
      <li>       <a href='/Adress'> Adress  </a> </li>
@@ -46,7 +47,7 @@ import './App.css';
 
      </ul>
    
-    </article>
+    </div>
     
       
      </footer>

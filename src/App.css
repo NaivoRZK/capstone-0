@@ -1,38 +1,443 @@
-.App {
+
+
+
+
+
+/* Style pour le composant Header  */
+header{
+    display: flex;
+    align-items:center;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-top: 20px;
+    position: relative;
+    left: 80px;
+    top: 43px;
+
+
+    
+}
+
+header img{
+  width: 200px;
+}
+
+
+
+
+
+
+/* Style pour le composant Nav  */
+nav ul li{
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
   text-align: center;
+  position: relative;
+  left:500px;
+  padding-left: 10px;
+
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li a {
+  text-decoration: none;
+  color: #333333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+nav ul {
+  list-style: none;
+  padding-left: 12px;
+  
+ 
+
+
+}
+
+.section1 h1 ,.section3 h1{
+color: #F4CE14;
+font-weight: medium;
+font-size: 40.11px;
+  
+}
+
+
+
+#restaurantFood{
+  display: block;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+
+  nav{
+
+    left: 12px;
   }
+
+  header{
+    top: 5px;
+
+  }
+
+  main{
+    margin: 35px;
+  }
+
+  img[alt="picture food the retaurant"] {
+    display: none;
+
+  }
+
+  /* .btn-right{
+  
+    
+  
+
+
+  } */
+
+  nav ul li{
+    display: block;
+    left:-6px;
+    
+  
+  
+  
+  
+  }
+
+
+
+  body h1{
+    font-size: 20px;
+  }
+
+  body h2,h3{
+    font-size: 16px;
+  }
+
+  section article{
+    
+    flex-direction: row;
+   
+  }
+
+  article img{
+    max-width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-left: 12px;
+
+  }
+
+  section{
+    flex-direction: column;
+    padding-left: 5px;
+    
+  } 
+
+  section{
+      margin: 5px;
+      padding: 1px;
+  }
+
+  body{
+    padding: O;
+  }
+
+  article{
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 34px;
+    
+  }
+
+  main{
+    margin-left: 12px;
+  }
+
+
+
+
+
+ #section2 article:first-child {
+   
+   flex-direction:column;
+ 
+  
+ }
+
+
+
+
+  
+
+
+
+  
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+
+
+/* Style pour le composant Main  */
+
+
+
+button{
+  width: 145px;
+  height: 45px;
+  background-color:#F4CE14;
+  border-radius: 45px;
+ 
+}
+
+
+
+section #article:first-of-type {
+  background-color: #ffffff;
+  
+ }
+
+
+ .section1 p{
+  color: #EDEFEE;
+  font-size: 15px;
+  font-family: 'Markazi Text', serif;
+  
+}
+
+
+
+.section1{
+  width: auto;
+  padding-left: 75px;
+  background-color: #6E6F6E;
+  color: #EDEFEE;
+  height: 400.4px; /* Hauteur fixe de la section */
+  
+  
+}
+
+
+ 
+
+
+img[alt="picture food the retaurant"] {
+  position: absolute; /* Positionnement absolu pour l'image */
+  bottom: -67px; 
+  margin-top: 35px;
+  margin-right: 100px;
+  margin-left: 45px;
+  border-radius:28.21px ;
+}
+
+.section2 img{
+   width: 200px;
+   height: 200px;
+   padding: 10px;
+   border-radius: 20px;
+
+}
+
+
+.section2 article{
+   margin: 57px;
+   background-color: hsl(120, 47%, 94%);
+   justify-content: center;
+   align-items: center
+}
+
+#section2 ,.section4,.section3{
+  font-family: 'Markazi Text', serif;
+
+}
+
+img[alt="picture notatin etoile"] {
+  width: 50px;
+  height: 20px;
+  margin-bottom: 16px;
+  margin-left: 40px;
+  float: inline-start;
+
+  
+
+}
+
+
+
+
+
+#pic-sct-3{
+  width: 67px;
+  height: 67px;
+  border-radius: 100%;
+  position: relative;
+  top: 35px;
+  margin: 20px;
+
+}
+
+.section3{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #282c34;
+  text-align: center 
+  ;
+
+
+
+
+}
+.section3 h1 {
+  flex-basis: 100%; /* Force le titre à occuper toute la largeur de la ligne */
+ }
+
+
+
+.section3 article{
+  height:300px;
+  background-color:white;
+  margin: 15px;
+}
+
+img[alt="picture food the chef the litle lemon"] {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 20px;
+}
+
+img[alt="picture food the local Ltle lemon"] {
+  position: absolute;
+  top: 1834Px;
+  left: 450px;
+
+
+
+}
+
+.section4 img{
+ width: 198px;
+ height: 200px;
+ 
+
+  
+
+}
+
+
+
+#section2 {
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 100px;
+}
+
+#section2 article:first-child {
+ flex-basis: 100%; /* Force le premier article à occuper toute la largeur de la ligne */
+}
+
+
+
+/* Styles pour le premier article */
+#section2 article:first-child {
+  display: flex;
   align-items: center;
+  justify-content: center ;
+  width: 100%; /* Assurez-vous que le premier article prend toute la largeur */
+ }
+
+ #section2 article:first-child h1,
+#section2 article:first-child button {
+ margin-left: 80px; /* Ajuste l'espace entre les éléments, 10px à gauche et à droite */
+}
+ 
+ 
+
+
+
+
+
+ section{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ article{
+  margin: 0rem;
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 1px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+  
+
+  
+ }
+
+ article p,img{
+  max-width: 75%;
+ }
+
+ #sous-article{
+  background-color: rgb(159, 146, 146);
+  padding: 20px;
+  margin: 20px;
+  height: 500px;
+ }
+
+
+
+
+
+
+
+
+
+
+/* Style pour le composant Footer  */
+ footer {
+  display: flex; 
+  margin-top: 200px;
+  border-top: 12px solid black;
+  padding-top: 12px;
+  flex-wrap: wrap;
+  margin-left: 0;
+  
+
+ }
+
+ ul div{
+  flex: 1;
+  margin-left: 12px;
+ }
+
+ footer ul{
+  list-style-type: none;
+  
+ }
+
+
+
+ 
+
+
+
+ 
