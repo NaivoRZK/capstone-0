@@ -85,22 +85,14 @@ font-size: 40.11px;
 
   }
 
-  main{
-    margin: 35px;
-  }
+
 
   img[alt="picture food the retaurant"] {
     display: none;
 
   }
 
-  /* .btn-right{
-  
-    
-  
 
-
-  } */
 
   nav ul li{
     display: block;
@@ -122,11 +114,7 @@ font-size: 40.11px;
     font-size: 16px;
   }
 
-  section article{
-    
-    flex-direction: row;
-   
-  }
+
 
   article img{
     max-width: 100%;
@@ -140,28 +128,25 @@ font-size: 40.11px;
 
   section{
     flex-direction: column;
-    padding-left: 5px;
+    
     
   } 
 
-  section{
-      margin: 5px;
-      padding: 1px;
-  }
+
+
+
+
+
 
   body{
     padding: O;
   }
 
-  article{
-    padding-left: 3px;
-    padding-right: 3px;
-    width: 34px;
-    
-  }
+
 
   main{
     margin-left: 12px;
+    max-width: 81%;
   }
 
 
@@ -175,6 +160,15 @@ font-size: 40.11px;
   
  }
 
+ #specialisation article:first-child {
+  flex-basis: 50%; /* Force le premier article à occuper toute la largeur de la ligne */
+ }
+
+ #specialisation article:first-child {
+  flex-direction: column;
+ 
+ }
+
 
 
 
@@ -184,6 +178,13 @@ font-size: 40.11px;
 
   
 
+}
+
+@media only screen and (max-width: 768px) {
+  section,footer {
+    /* Modifiez les propriétés CSS pour une disposition adaptée aux écrans plus petits */
+    flex-direction: column; /* Pour afficher les articles en colonne */
+  }
 }
 
 
@@ -195,6 +196,25 @@ font-size: 40.11px;
 
 
 
+
+
+
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+ }
+
+ article{
+  flex: 1;
+  /* padding-left: 20px;
+  padding-right: 1px; */
+ }
+
+
+
 button{
   width: 145px;
   height: 45px;
@@ -202,6 +222,11 @@ button{
   border-radius: 45px;
  
 }
+
+
+
+
+
 
 
 
@@ -220,8 +245,7 @@ section #article:first-of-type {
 
 
 
-.section1{
-  width: auto;
+.welcome{
   padding-left: 75px;
   background-color: #6E6F6E;
   color: #EDEFEE;
@@ -244,10 +268,9 @@ img[alt="picture food the retaurant"] {
 }
 
 .section2 img{
-   width: 200px;
-   height: 200px;
    padding: 10px;
    border-radius: 20px;
+   max-width: 100%;
 
 }
 
@@ -265,11 +288,11 @@ img[alt="picture food the retaurant"] {
 }
 
 img[alt="picture notatin etoile"] {
-  width: 50px;
-  height: 20px;
   margin-bottom: 16px;
   margin-left: 40px;
   float: inline-start;
+  max-width: 55%;
+  max-height: 65%;
 
   
 
@@ -339,61 +362,35 @@ img[alt="picture food the local Ltle lemon"] {
 
 
 
-#section2 {
+#specialisation{
  display: flex;
  flex-wrap: wrap;
  margin-top: 100px;
 }
 
-#section2 article:first-child {
+#specialisation article:first-child {
  flex-basis: 100%; /* Force le premier article à occuper toute la largeur de la ligne */
 }
 
 
 
 /* Styles pour le premier article */
-#section2 article:first-child {
+#specialisation article:first-child {
   display: flex;
   align-items: center;
   justify-content: center ;
   width: 100%; /* Assurez-vous que le premier article prend toute la largeur */
  }
 
- #section2 article:first-child h1,
-#section2 article:first-child button {
+ #specialisation article:first-child h1,
+#specialisation article:first-child button {
  margin-left: 80px; /* Ajuste l'espace entre les éléments, 10px à gauche et à droite */
 }
  
  
 
-
-
-
-
- section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-left: 0;
-  
- }
-
- article{
-  margin: 0rem;
-  flex: 1;
-  padding-left: 20px;
-  padding-right: 1px;
-
-
-
-  
-
-  
- }
-
  article p,img{
-  max-width: 75%;
+  max-width: 100%;
  }
 
  #sous-article{
@@ -402,12 +399,6 @@ img[alt="picture food the local Ltle lemon"] {
   margin: 20px;
   height: 500px;
  }
-
-
-
-
-
-
 
 
 
