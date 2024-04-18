@@ -95,7 +95,7 @@ export default function BookingForm({date,setDate,
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <input type="submit" value="Make Your reservation" id="btn-reservation" disabled={!isFormValid} />
+        <input type="submit" value="Make Your reservation" id="btn-reservation" disabled={!true} />
       </form>
     </>
   );

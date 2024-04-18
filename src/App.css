@@ -314,7 +314,7 @@ img[alt="picture notatin etoile"] {
 
 }
 
-.section3{
+.testimonials{
   display: flex;
   flex-wrap: wrap;
   background-color: #282c34;
@@ -325,13 +325,13 @@ img[alt="picture notatin etoile"] {
 
 
 }
-.section3 h1 {
+.testimonials h1 {
   flex-basis: 100%; /* Force le titre à occuper toute la largeur de la ligne */
  }
 
 
 
-.section3 article{
+.testimonials article{
   height:300px;
   background-color:white;
   margin: 15px;
@@ -425,6 +425,24 @@ img[alt="picture food the local Ltle lemon"] {
  footer ul{
   list-style-type: none;
   
+
+
+ }
+
+ /* Style pour le page de confirmation */
+ .confirmationPage {
+  max-width: 100%;
+  text-align: center;
+
+ }
+
+ .confirmationPage h1{
+  background-color: black; /* Fond noir */
+  color: white; /* Couleur du texte */
+  padding: 10px; /* Espacement interne pour mieux voir l'ombre */
+  box-shadow: 5px 5px 10px yellow; 
+  
+
  }
 
 

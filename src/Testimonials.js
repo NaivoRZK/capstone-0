@@ -54,7 +54,7 @@ export default function Testimonials() {
      ]
     return(
         <>
-        <section className='section3'>
+        <section className='testimonials' aria-label='testimonials'>
         <h1>Testimonials</h1>
   
         {infoTestimonials.map(item => (
