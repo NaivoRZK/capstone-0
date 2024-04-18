@@ -192,7 +192,9 @@ font-size: 40.11px;
 
 
 
+
 /* Style pour le composant Main  */
+
 
 
 
@@ -215,7 +217,7 @@ section{
 
 
 
-button{
+button,#btn-reservation{
   width: 145px;
   height: 45px;
   background-color:#F4CE14;
