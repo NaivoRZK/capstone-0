@@ -1,4 +1,4 @@
-
+import React, { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { submitAPI } from './API';
 
@@ -12,10 +12,33 @@ export default function BookingForm({date,setDate,
                                     }) {
 
                 const navigate = useNavigate();
+                //Etat de boutton de fourm
+                const [isFormValid, setIsFormValid] = useState(false);
+                
+ useEffect(() => {
+  // Vérifie si le formulaire est valide
+  const checkFormValidity = () => {
+    // Vérifie si les champs requis sont remplis
+    const isDateValid = date !== '';
+    const isTimeValid = time !== '';
+    const isGuestsValid = guests > 0 && guests <= 10;
+    const isOccasionValid = occasion !== '';
+
+    // Vérifie si l'horaire sélectionné est disponible pour la date choisie
+    const isTimeAvailable = availableTimes.includes(time);
+
+    setIsFormValid(isDateValid && isTimeValid && isGuestsValid && isOccasionValid && isTimeAvailable);
+  };
+
+  checkFormValidity();
+}, [date, time, guests, occasion, availableTimes]);
+
+
 
                 let formData={
                   date,
                   time,
+                  guests,
                   occasion
                   };      
 
@@ -44,7 +67,7 @@ export default function BookingForm({date,setDate,
         <h2>Page for reservation table</h2>
       <form onSubmit={handleSubmit} style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
         <label htmlFor="res-date">Choose date</label>
-        <input type="date" id="res-date" 
+        <input type="date" id="res-date" required
                value={date}
                onChange={handleDateChange}
         />
@@ -60,7 +83,7 @@ export default function BookingForm({date,setDate,
         
         </select>
         <label htmlFor="guests">Number of guests</label>
-        <input type="number" placeholder="1" min="1" max="10" id="guests"
+        <input type="number" placeholder="1" min="1" max="10" id="guests" required
                 value={guests}
                 onChange={setGuest}
         />
@@ -72,7 +95,7 @@ export default function BookingForm({date,setDate,
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <input type="submit" value="Make Your reservation" id="btn-reservation" />
+        <input type="submit" value="Make Your reservation" id="btn-reservation" disabled={!isFormValid} />
       </form>
     </>
   );

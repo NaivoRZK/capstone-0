@@ -38,7 +38,7 @@ import dessert from './dessert.jpg';
      ]
   return (
     <>
-    <section id='specialisation'>  
+    <section id='specialisation' aria-label='specialisation'>  
     <article >
        <h1 id='title'> This weeks specials!</h1>
         <button className='btn-right'>Online Menu</button>
@@ -48,7 +48,7 @@ import dessert from './dessert.jpg';
             {infoSection2.map(item => (
                      <article id='sous-article' key={item.food}>  
                      <img src={item.image}  alt={item.alt}/>
-                       <h2>{item.food}</h2>    
+                       <h2 aria-label={item.food}>{item.food}</h2>    
                        <p>{item.paragraphe1} </p>
                        <p>{item.paragraphe2} </p>
                        <h3>Order Delivery</h3>     

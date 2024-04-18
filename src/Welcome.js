@@ -5,7 +5,7 @@ import restaurantFood from './restauranfood.jpg'
   return (
     <>
 
-<section className='welcome'>
+<section className='welcome' aria-label='welcome '>
          <article className='it'>
              <h1>Litle Lemon</h1>
              <h3>Chicago</h3>
