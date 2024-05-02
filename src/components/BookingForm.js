@@ -57,10 +57,10 @@ console.log('isSeatingTypeValid:', isSeatingTypeValid);
   console.log(isFormValid)
 
 };
-                useEffect(() => {
-                  checkFormValidity();
-               }, [date, time, guests, occasion, firstName, lastName,seatingType,email,phoneNumber]);
-       
+useEffect(() => {
+  checkFormValidity();
+ }, [date, time, guests, occasion, firstName, lastName, seatingType, email, phoneNumber, checkFormValidity]);
+ 
 
 const validateEmail = (email) => {
   // Logique de validation de l'e-mail
