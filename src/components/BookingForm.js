@@ -25,11 +25,7 @@ export default function BookingForm({date,setDate,
                 const navigate = useNavigate();
                 //Etat de boutton de fourm
                 const [isFormValid, setIsFormValid] = useState(true);
-         
-                useEffect(() => {
-                  checkFormValidity();
-               }, [date, time, guests, occasion, firstName, lastName,seatingType,email,phoneNumber]);
-              
+                
 const checkFormValidity = () => {
   const isDateValid = date !== '';
   const isTimeValid = time !== '';
@@ -61,6 +57,10 @@ console.log('isSeatingTypeValid:', isSeatingTypeValid);
   console.log(isFormValid)
 
 };
+                useEffect(() => {
+                  checkFormValidity();
+               }, [date, time, guests, occasion, firstName, lastName,seatingType,email,phoneNumber]);
+       
 
 const validateEmail = (email) => {
   // Logique de validation de l'e-mail
