@@ -17,7 +17,7 @@ export default function Signup({ handleGoogleSignIn }) {
           />
         </div>
         <div className='main-publish'>
-          <h2>Discover the Magic of Little Lemon</h2>
+          <h2>popota</h2>
           <p>Come explore our unique and delicious menu. Each dish is crafted to make you discover the flavors of the world.</p>
           <p>Don't miss the chance to experience an unforgettable culinary adventure at Little Lemon.</p>
         </div>
