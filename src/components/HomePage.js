@@ -83,7 +83,7 @@ export default function HomePage() {
                 <>
                     <Header />
                     <Signup handleGoogleSignIn={handleGoogleSignIn}/>
-                    <Footer />
+                
                 </>
             )}
     

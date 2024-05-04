@@ -34,7 +34,7 @@ header img{
 /* Style pour le composant Nav  */
 .container-sign {
   position: absolute;
-  left: 994px; /* Aligné à droite pour s'adapter à la taille de l'écran */
+  left: 600px; /* Aligné à droite pour s'adapter à la taille de l'écran */
   top: 3px;
   width: 20%; /* Largeur relative à la taille de l'écran */
   max-width: 300px; /* Largeur maximale pour éviter que le conteneur ne devienne trop petit */
@@ -171,6 +171,8 @@ font-size: 40.11px;
   footer {
     flex-direction: column;
     padding-left: 12px;
+    background-color: gray;
+    color: white;
 
   }
 
@@ -231,26 +233,62 @@ font-size: 40.11px;
 
 
 /* Style pour le composant Main  */
-.main-publish{
-  background-color: hwb(109 18% 24% / 0.745);
-  color: whitesmoke;
-  ;
+
+
+img[alt="chef brillant"]{
+  width: 350px;
+  height: 350px;
+  border: 3px solid black;
+  border-radius: 20px;
+  position: relative;
+  left: 300px;
+  top: 189px;
 }
-.main-publish h2{
-  color: brown;
+
+@media (max-width: 600px) {
+
+img[alt="chef brillant"]{
+  width: 100px;
+  height: 100px;
+  top: 400px;
+}
+.main-sign1 h2{
+  font-size:1px;
+  
+}
+.main-sign1{
+  width: 30px;
+}
+
+}
+
+.main-sign1{
+  width: 600px;
+}
+
+
+@keyframes tomber {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+ }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+ }
+}
+.main-sign1 h2{
   font-size: 56px;
+  animation: tomber 2s ease-out forwards;
   
 }
 
-img[alt="hotels"]{
-  width:400px;
-   height:500px;
-}
+
 
 
 @media (max-width: 600px) {
 
-  .main-publish{
+  .main-sign1{
     width: 67%;
     margin-left: 35px;
     margin-top: 23px;
@@ -263,20 +301,27 @@ img[alt="hotels"]{
      margin-right: 89px;
   }
 
-  .main-publish h2{
+  .main-sign2 h2{
     font-size: 23px;
   }
-  .containers{
-    flex-direction: column;
+
+  .container-sign{
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
   }
+ 
 
  }
 
-.containers{
+.container-sign{
+  position: absolute;
+  left: 0;
   display: flex;
-  flex-wrap: wrap;
-  text-align: center ;
-  margin-top: 45px;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: 178px;
+  padding: 40px;
 }
 
 .btn-card{
@@ -478,10 +523,7 @@ img[alt="picture food the local Ltle lemon"] {
   height: 500px;
  }
 
- .galerie{
-  margin-top: 35px;
-  margin-left: 35px;
- }
+
 
  .qualites{
   display: flex;
