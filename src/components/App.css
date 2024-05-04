@@ -303,6 +303,8 @@ img[alt="chef brillant"]{
 
   .main-sign2 h2{
     font-size: 23px;
+    position: absolute;
+    left: 0;
   }
 
   .container-sign{
